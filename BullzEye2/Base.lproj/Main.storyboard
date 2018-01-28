@@ -65,6 +65,9 @@
                                 <rect key="frame" x="32" y="260" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="startOverButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XyH-tM-GwB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Veg-pr-2mO">
                                 <rect key="frame" x="130" y="265" width="50" height="21"/>
@@ -103,7 +106,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="roundsLabel" destination="tQZ-U4-LiS" id="8wl-XC-Efv"/>
+                        <outlet property="scoreLabel" destination="s0p-aQ-VBQ" id="voU-yz-koe"/>
                         <outlet property="slider" destination="Nar-l2-ahW" id="FIn-KD-kqi"/>
+                        <outlet property="targetLabel" destination="bfv-IC-WZq" id="dIv-Wx-whY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
